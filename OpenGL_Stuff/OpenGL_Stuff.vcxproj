@@ -62,6 +62,14 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\freeglut.h" />
+    <ClInclude Include="..\freeglut_ext.h" />
+    <ClInclude Include="..\freeglut_std.h" />
+    <ClInclude Include="..\glew.h" />
+    <ClInclude Include="..\glxew.h" />
+    <ClInclude Include="..\wglew.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

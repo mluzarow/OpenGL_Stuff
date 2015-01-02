@@ -1,5 +1,8 @@
-#include "C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/include/GL/glew.h"
-#include "C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/include/GL/freeglut.h"
+//#include "C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/include/GL/glew.h"
+//#include "C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/include/GL/freeglut.h"
+#include "glew.h"
+#include "freeglut.h"
+
 
 //Variables
 bool* KeyStates = new bool[256]; //Array of booleans for current key state
