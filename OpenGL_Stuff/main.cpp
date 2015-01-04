@@ -3,6 +3,8 @@
 
 #include "main.h"
 
+#include <iostream>
+
 //Variables
 bool* KeyStates = new bool[256]; //Array of booleans for current key state
 // false = Not pressed
@@ -29,7 +31,7 @@ void Special_Key_Released (int key, int x, int y) {
 
 //Perform key operations
 void Key_Operations (void) {
-	if (KeyStates['b']) {
+	if (KeyStates['q']) {
 		drawPoint(200, 200);
 	} else if (KeyStates['a']) {
 		drawLine(250, 250, 450, 450);
@@ -50,7 +52,6 @@ void Key_Released (unsigned char key, int x, int y) {
 
 //Draws a line of pixels from (250, 250) to (500, 500)
 void drawLine(int x1, int y1, int x2, int y2) {
-	
 	
 	glBegin(GL_LINES);
 	glVertex2d(x1, y1);
@@ -130,6 +131,8 @@ int main (int argc, char** argv) {
 	glutKeyboardUpFunc(Key_Released); //Tell GLUT to use Key_Released method
 	glutSpecialFunc(Special_Key_Pressed); //Tell GLUT to use Special_Key_Pressed method
 	glutSpecialUpFunc(Special_Key_Released); //Tell GLUT to use Special_Key_Released method
+
+	std::cout << "Point: q\nLine: a\n";
 
 	glutMainLoop();
 }
